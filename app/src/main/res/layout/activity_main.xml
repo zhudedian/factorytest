@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d2dbe">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Android厂测工具"
+        android:textColor="#ffffff"
+        android:textSize="35sp" />
+
+    <GridLayout
+        android:id="@+id/info_grid"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:columnCount="4"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="30dp"
+        android:layout_below="@id/title">
+
+        <TextView
+            android:id="@+id/remote_key"
+            android:text="遥控按键"
+            style="@style/TextKeyStyle"/>
+        <TextView
+            android:id="@+id/remote_value"
+            android:text="：请按遥控器任意键进行验证"
+            style="@style/TextValueStyle"/>
+        <TextView
+            android:id="@+id/image_version_key"
+            android:text="固件版本"
+            style="@style/TextKeyStyle"/>
+        <TextView
+            android:id="@+id/image_Version_value"
+            style="@style/TextValueStyle"/>
+
+
+
+        <TextView
+            android:id="@+id/eth_mac_key"
+            android:text="有线MAC"
+            style="@style/TextKeyStyle"/>
+        <TextView
+            android:id="@+id/eth_mac_value"
+            style="@style/TextValueStyle"/>
+        <TextView
+            android:id="@+id/device_model_key"
+            android:text="设备型号"
+            style="@style/TextKeyStyle"/>
+        <TextView
+            android:id="@+id/device_model_value"
+            style="@style/TextValueStyle"/>
+
+
+
+        <TextView
+            android:id="@+id/eth_ip_key"
+            android:text="有线IP"
+            style="@style/TextKeyStyle"/>
+        <TextView
+            android:id="@+id/eth_ip_value"
+            style="@style/TextValueStyle"/>
+        <TextView
+            android:id="@+id/model_key"
+            android:text="机型"
+            style="@style/TextKeyStyle"/>
+        <TextView
+            android:id="@+id/model_value"
+            style="@style/TextValueStyle"/>
+
+
+
+        <TextView
+            android:id="@+id/wifi_mac_key"
+            android:text="无线MAC"
+            style="@style/TextKeyStyle"/>
+        <TextView
+            android:id="@+id/wifi_mac_value"
+            style="@style/TextValueStyle"/>
+        <TextView
+            android:id="@+id/cpu_key"
+            android:text="芯片"
+            style="@style/TextKeyStyle"/>
+        <TextView
+            android:id="@+id/cpu_value"
+            style="@style/TextValueStyle"/>
+
+
+
+        <TextView
+            android:id="@+id/usb1_key"
+            android:text="USB1"
+            style="@style/TextKeyStyle"/>
+        <TextView
+            android:id="@+id/usb1_value"
+            style="@style/TextValueStyle"
+            android:text="：不可用"
+            android:textColor="#ff0000"/>
+        <TextView
+            android:id="@+id/storage_key"
+            android:text="容量"
+            style="@style/TextKeyStyle"/>
+        <TextView
+            android:id="@+id/storage_value"
+            style="@style/TextValueStyle"/>
+
+
+
+        <TextView
+            android:id="@+id/usb2_key"
+            android:text="USB2"
+            style="@style/TextKeyStyle"/>
+        <TextView
+            android:id="@+id/usb2_value"
+            style="@style/TextValueStyle"
+            android:text="：不可用"
+            android:textColor="#ff0000"/>
+        <TextView
+            android:id="@+id/memory_key"
+            android:text="内存"
+            style="@style/TextKeyStyle"/>
+        <TextView
+            android:id="@+id/memory_value"
+            style="@style/TextValueStyle"/>
+
+
+
+        <TextView
+            android:id="@+id/sdtf_key"
+            android:text="SD/TF卡"
+            style="@style/TextKeyStyle"/>
+        <TextView
+            android:id="@+id/sdtf_value"
+            style="@style/TextValueStyle"
+            android:text="：不可用"
+            android:textColor="#ff0000"/>
+        <TextView
+            android:id="@+id/resolution_key"
+            android:text="当前分辨率"
+            style="@style/TextKeyStyle"/>
+        <TextView
+            android:id="@+id/resolution_value"
+            style="@style/TextValueStyle"/>
+
+
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/usb3"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="210dp">
+        <TextView
+            android:id="@+id/usb3_key"
+            android:text="USB3"
+            style="@style/TextKeyStyle"/>
+        <TextView
+            android:id="@+id/usb3_value"
+            style="@style/TextValueStyle"
+            android:text="：可用"
+            android:textColor="#ff00ff00"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/usb4"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="240dp">
+        <TextView
+            android:id="@+id/usb4_key"
+            android:text="USB4"
+            style="@style/TextKeyStyle"/>
+        <TextView
+            android:id="@+id/usb4_value"
+            style="@style/TextValueStyle"
+            android:text="：可用"
+            android:textColor="#ff00ff00"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/wifi_ssids"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="355dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:text="附近WIFI热点:"
+        />
+
+    <ListView
+        android:id="@+id/wifi_list"
+        android:layout_width="250dp"
+        android:layout_height="320dp"
+        android:nextFocusRight="@+id/refresh_wifi"
+        android:nextFocusLeft="@+id/refresh_wifi"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#047014"/>
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_back"
+        android:layout_toRightOf="@id/wifi_list"
+        android:layout_alignParentBottom="true"
+        android:nextFocusRight="@+id/bt_list"
+        android:text="设置"/>
+    <Button
+        android:id="@+id/refresh_wifi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="280dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_back"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/wifi_list"
+        android:nextFocusLeft="@id/wifi_list"
+        android:nextFocusRight="@+id/bt_list"
+        android:nextFocusDown="@id/setting"
+        android:text="刷新"/>
+    <TextView
+        android:id="@+id/bt_ssids"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="355dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/refresh_wifi"
+        android:text="附近蓝牙设备:"
+        />
+    <ListView
+        android:id="@+id/bt_list"
+        android:layout_width="250dp"
+        android:layout_height="320dp"
+        android:nextFocusRight="@+id/refresh_wifi"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/refresh_wifi"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:nextFocusLeft="@id/refresh_wifi"
+        android:background="#047014"/>
+    <VideoView
+        android:id="@+id/videoview"
+        android:layout_height="400dp"
+        android:layout_width="660dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:focusable="false"/>
+
+
+
+
+
+</RelativeLayout>
